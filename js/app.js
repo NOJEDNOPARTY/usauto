@@ -18,23 +18,108 @@ var common = {
 		// 	$('nav').removeClass('open');
 		// })
 		
-		// var bLazy = new Blazy({});
+		var bLazy = new Blazy({});
 
 
 	},
 	owl: function(){
+		$('.banner-slider').trigger('resize.owl.carousel');
+		$('.test-auto-slider').owlCarousel({
+			margin:13,
+			nav: true,
+			loop: true,
+			dots: false,
+			items: 5,
+			smartSpeed: 1000,
+			animateOut: 'fadeOut',
+			animateIn: 'fadeIn',
+		});
+		$('.auto-slider').owlCarousel({
+			margin:25,
+			nav: true,
+			loop: true,
+			dots: false,
+			items: 3,
+			smartSpeed: 1000,
+			animateOut: 'fadeOut',
+			animateIn: 'fadeIn',
+		});
+		$('.rev-slider').owlCarousel({
+			margin:0,
+			nav: true,
+			loop: true,
+			dots: false,
+			items: 1,
+			smartSpeed: 1000,
+			animateOut: 'fadeOut',
+			animateIn: 'fadeIn',
+		});
+		$('.warranty-slider').owlCarousel({
+			margin:0,
+			nav: true,
+			loop: true,
+			dots: false,
+			items: 1,
+			smartSpeed: 1000,
+			animateOut: 'fadeOut',
+			animateIn: 'fadeIn',
+		});
 		$('.banner-slider').owlCarousel({
 			margin:0,
 			nav: true,
 			loop: true,
 			dots: false,
 			items: 1,
-			smartSpeed: 5000,
+			smartSpeed: 1000,
+			animateOut: 'fadeOut',
+			animateIn: 'fadeIn',
+		});
+		$('.stages-list').owlCarousel({
+			margin:0,
+			nav: true,
+			loop: true,
+			dots: false,
+			items: 3,
+			smartSpeed: 1000,
 			animateOut: 'fadeOut',
 			animateIn: 'fadeIn',
 		});
 
+		var whyText = $('.why-text-slider').owlCarousel({
+			margin:0,
+			nav: true,
+			loop: true,
+			dots: false,
+			items: 1,
+			smartSpeed: 1000,
+			animateOut: 'fadeOut',
+			animateIn: 'fadeIn',
+			dotsContainer: '.why-dots'
+		});
+		
+		var whyImg = $('.why-img-slider').owlCarousel({
+			margin:40,
+			nav: true,
+			loop: true,
+			dots: false,
+			items: 2,
+			smartSpeed: 1000,
+			animateOut: 'fadeOut',
+			animateIn: 'fadeIn',
+			dotsContainer: '.why-dots'
+		});
 
+		$('.why-dots .owl-dot').click(function () {
+			$('.why-dots .owl-dot').removeClass('active');
+			$(this).addClass('active');
+			whyImg.trigger('to.owl.carousel', [$(this).index(), 300]);
+			whyText.trigger('to.owl.carousel', [$(this).index(), 300]);
+		});
+
+		$('.owl-dot, .owl-nav button').click(function(){var bLazy = new Blazy();});
+		$('.owl-carousel').on(' translated.owl.carousel', function(event) {
+			var bLazy = new Blazy({});
+		})
 		function bannerNav() {
 			$('.banner-slider').each(function(){
 				var product = $(this).find('.owl-item:not(.cloned)').length;
