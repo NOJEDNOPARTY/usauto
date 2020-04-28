@@ -2,6 +2,7 @@ var common = {
 	init: function() {
 		common.main();
 		common.owl();
+		common.submit();
 	},
 	main: function(){
 
@@ -9,17 +10,38 @@ var common = {
 
 		new WOW().init();
 
-		// $('.menu-trigger').click(function(event){
-		// 	event.preventDefault();
-		// 	$('nav').addClass('open');
-		// })
-		// $('.nav-close').click(function(event){
-		// 	event.preventDefault();
-		// 	$('nav').removeClass('open');
-		// })
+		$('.menu-trigger').click(function(event){
+			event.preventDefault();
+			$('.header-mob').toggleClass('open');
+			$('body').toggleClass('hidden');
+		})
 		
 		var bLazy = new Blazy({});
 
+
+		$('.anchor').click(function(event){
+			event.preventDefault();
+			var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top}, 2000);
+			$('.header-mob').removeClass('open');
+			$('body').removeClass('hidden');
+		});
+
+		
+		$('.call-popup').click(function(event){
+			event.preventDefault();
+			var popup  = '#' + $(this).attr('data-popup');
+			$(popup).addClass('active');
+			$('body').addClass('hidden');
+			$('.header-mob').removeClass('open');
+
+		});
+
+		$('.popup-close').click(function(){
+			$(this).closest('.popup-wrapper').removeClass('active');
+			$('body').removeClass('hidden');
+		})
 
 	},
 	owl: function(){
@@ -33,6 +55,18 @@ var common = {
 			smartSpeed: 1000,
 			animateOut: 'fadeOut',
 			animateIn: 'fadeIn',
+			responsive:{
+				// 0:{
+				// 	items:1,
+				// },
+				0:{
+					items:3,
+					nav:false
+				},
+				768:{
+					items:5,
+				}
+			}
 		});
 		$('.auto-slider').owlCarousel({
 			margin:25,
@@ -43,6 +77,15 @@ var common = {
 			smartSpeed: 1000,
 			animateOut: 'fadeOut',
 			animateIn: 'fadeIn',
+			responsive:{
+				0:{
+					center: true,
+					items: 1
+				},
+				768:{
+					center: false
+				}
+			}
 		});
 		$('.rev-slider').owlCarousel({
 			margin:0,
@@ -83,6 +126,14 @@ var common = {
 			smartSpeed: 1000,
 			animateOut: 'fadeOut',
 			animateIn: 'fadeIn',
+			responsive:{
+				0:{
+					items: 1
+				},
+				621:{
+					items: 3,
+				}
+			}
 		});
 
 		var whyText = $('.why-text-slider').owlCarousel({
@@ -161,6 +212,33 @@ var common = {
 
 
 	},
+	submit: function(){
+		$("form").submit(function(event){
+			event.preventDefault();
+			formField = $(this).find(".form-field, .form-line, input, select")
+			
+			formField.each(function(){
+				var thisEl = $(this);
+				if (! thisEl.val().length) {
+					thisEl.addClass('error')
+					setTimeout(function(){
+						thisEl.removeClass('error')
+					}, 3000)
+					thisEl.addClass('form-error')
+				}else { thisEl.removeClass('form-error')}
+			});	
+			if(formField.hasClass('form-error') == false){
+				$('.popup-wrapper').removeClass('active');
+				$('#thanksPopup').addClass('active');
+				$('body').addClass('hidden');
+				var bLazy = new Blazy({});
+				setTimeout(function(){
+					$('.popup-wrapper').removeClass('active');
+					$('body').removeClass('hidden');
+				}, 3000)
+			}
+		});
+	}
 };
 
 (function() {

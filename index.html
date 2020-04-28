@@ -18,6 +18,29 @@
 
     <header>
         <div class="wrapper">
+            <div class="header-mob">
+                <div class="header-mob-block">
+                    <a href="#head" class="logo anchor"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/logo-white.png" alt="logo"></a>
+                    <a href="#" class="menu-trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <div class="header-social">
+                        <a href="#"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/instagram-white.svg" alt="icon"></a>
+                        <a href="#"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/facebook-white.svg" alt="icon"></a>
+                        <a href="#"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/telegram-white.svg" alt="icon"></a>
+                    </div>
+                </div>
+                <nav>
+                    <a class="anchor" href="#popular">Топ авто</a>
+                    <a class="anchor" href="#stages">Этапы</a>
+                    <a class="anchor" href="#why">Преимущества</a>
+                    <a class="anchor" href="#reviews">Отзыв</a>
+                    <a class="anchor" href="#contacts">Контакты</a>
+                    <a href="#" class="header-btn-mob call-popup" data-popup="formPopup">Обратный звонок</a>
+                </nav>
+            </div>
             <div class="header-nav">
                 <div class="header-column header-row-white">
                     <div class="header-row">
@@ -35,16 +58,16 @@
                 <div class="header-column header-row-black">
                     <div class="header-row">
                         <nav>
-                            <a href="">Топ авто</a>
-                            <a href="">Этапы</a>
-                            <a href="">Преимущества</a>
-                            <a href="">Отзыв</a>
-                            <a href="">Контакты</a>
+                            <a class="anchor" href="#popular">Топ авто</a>
+                            <a class="anchor" href="#stages">Этапы</a>
+                            <a class="anchor" href="#why">Преимущества</a>
+                            <a class="anchor" href="#reviews">Отзыв</a>
+                            <a class="anchor" href="#contacts">Контакты</a>
                         </nav>
                     </div>
                 </div>
             </div>
-            <a href="#head" class="btn header-btn">Обратный звонок</a>
+            <a href="#head" class="btn header-btn call-popup" data-popup="formPopup">Обратный звонок</a>
         </div>
     </header>
     <div class="banner">
@@ -117,18 +140,33 @@
                         </select>
                     </div>
                     <input class="phone-mask" type="tel" name="tel" placeholder="Номер телефона">
-                    <a href="#" class="btn btn-red">Получить скидку</a>
+                    <button class="btn btn-red" type="submit">Получить скидку</button>
                 </form>
             </div>
         </div>
     </div>
-    <div class="stages">
+    <div id="stages" class="stages">
         <div class="wrapper">
             <h2 class="title title-white">
                 <span>Этапы работы</span>
                 <span class="title-shadow">Этапы работы</span>
             </h2>
-            <div class="stages-list owl-carousel">
+            <div class="stages-list slider owl-carousel">
+                <div class="stage" style="background-image: url('./images/stage-1.jpg');">
+                    <div class="stage-num">01</div>
+                    <div class="stage-title">Консультация  и подбор авто</div>
+                    <p class="stage-text">Наша компания, специализируется на подборе автомобилей в Америке и помогает не только найти, но и выполняет ПОЛНУЮ  проверку по всем имеющимся базам  перед покупкой автомобиля.</p>
+                </div>
+                <div class="stage" style="background-image: url('./images/stage-2.jpg');">
+                    <div class="stage-num">02</div>
+                    <div class="stage-title">Консультация  и подбор авто</div>
+                    <p class="stage-text">Наша компания, специализируется на подборе автомобилей в Америке и помогает не только найти, но и выполняет ПОЛНУЮ  проверку по всем имеющимся базам  перед покупкой автомобиля.</p>
+                </div>
+                <div class="stage" style="background-image: url('./images/stage-3.jpg');">
+                    <div class="stage-num">03</div>
+                    <div class="stage-title">Консультация  и подбор авто</div>
+                    <p class="stage-text">Наша компания, специализируется на подборе автомобилей в Америке и помогает не только найти, но и выполняет ПОЛНУЮ  проверку по всем имеющимся базам  перед покупкой автомобиля.</p>
+                </div>
                 <div class="stage" style="background-image: url('./images/stage-1.jpg');">
                     <div class="stage-num">01</div>
                     <div class="stage-title">Консультация  и подбор авто</div>
@@ -145,7 +183,7 @@
                     <p class="stage-text">Наша компания, специализируется на подборе автомобилей в Америке и помогает не только найти, но и выполняет ПОЛНУЮ  проверку по всем имеющимся базам  перед покупкой автомобиля.</p>
                 </div>
             </div>
-            <a href="#" class="btn btn-red">Купить авто с США</a>
+            <a href="#" class="btn btn-red call-popup" data-popup="formPopup">Купить авто с США</a>
         </div>
     </div>
     <div class="subscribe">
@@ -156,7 +194,10 @@
             <p>- Бесплатная консультация</p>
             <a href="#" class="btn btn-red btn-black">Подписаться</a>
         </div>
-        <div class="subscribe-img wow fadeInLeft"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/telegram-bg.png" alt="telegram"></div>
+        <div class="subscribe-img wow fadeInLeft">
+            <img class="subscribe-img-pc b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/telegram-bg.png" alt="telegram">
+            <img class="subscribe-img-mob b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/telegram-bg2.png" alt="telegram">
+        </div>
     </div>
     <div class="auto-section b-lazy" data-src="./images/auto-bg.jpg">
         <a href="#" class="btn btn-red">Все АВто</a>
@@ -166,123 +207,125 @@
                 <span>У нас есть что купить</span>
             </h2>
             <p class="subtitle">Продаж і купівля авто в Україні. Купити або продати нові автомобілі <br> і авто з пробігом в Києві і інших містах України можна через наш сайт.</p>
-            <div class="auto-slider slider owl-carousel">
-                <div class="auto-layout">
-                    <div class="auto-square">Б/У</div>
-                    <div class="auto">
-                        <div class="auto-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/auto-img-1.jpg" alt="auto"></div>
-                        <div class="auto-name">Ford Explorer Limited 4WD</div>
-                        <div class="auto-info">
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/hot-icon.png" alt="hot">
+            <div class="auto-slider-wrap">
+                <div class="auto-slider slider owl-carousel">
+                    <div class="auto-layout">
+                        <div class="auto-square">Б/У</div>
+                        <div class="auto">
+                            <div class="auto-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/auto-img-1.jpg" alt="auto"></div>
+                            <div class="auto-name">Ford Explorer Limited 4WD</div>
+                            <div class="auto-info">
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/hot-icon.png" alt="hot">
+                                    </div>
+                                    <span>Бензин</span>
                                 </div>
-                                <span>Бензин</span>
-                            </div>
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/road-icon.png" alt="hot">
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/road-icon.png" alt="hot">
+                                    </div>
+                                    <span>15 000 км</span>
                                 </div>
-                                <span>15 000 км</span>
-                            </div>
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/timer-icon.png" alt="hot">
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/timer-icon.png" alt="hot">
+                                    </div>
+                                    <span>2015 г</span>
                                 </div>
-                                <span>2015 г</span>
                             </div>
+                            <a href="#" class="btn btn-red btn-black call-popup" data-popup="formPopup">КУПИТЬ</a>
                         </div>
-                        <a href="#" class="btn btn-red btn-black">КУПИТЬ</a>
                     </div>
-                </div>
-                <div class="auto-layout">
-                    <div class="auto-square">NEW</div>
-                    <div class="auto">
-                        <div class="auto-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/auto-img-2.jpg" alt="auto"></div>
-                        <div class="auto-name">Ford Explorer Limited 4WD</div>
-                        <div class="auto-info">
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/hot-icon.png" alt="hot">
+                    <div class="auto-layout">
+                        <div class="auto-square">NEW</div>
+                        <div class="auto">
+                            <div class="auto-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/auto-img-2.jpg" alt="auto"></div>
+                            <div class="auto-name">Ford Explorer Limited 4WD</div>
+                            <div class="auto-info">
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/hot-icon.png" alt="hot">
+                                    </div>
+                                    <span>Бензин</span>
                                 </div>
-                                <span>Бензин</span>
-                            </div>
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/road-icon.png" alt="hot">
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/road-icon.png" alt="hot">
+                                    </div>
+                                    <span>15 000 км</span>
                                 </div>
-                                <span>15 000 км</span>
-                            </div>
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/timer-icon.png" alt="hot">
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/timer-icon.png" alt="hot">
+                                    </div>
+                                    <span>2015 г</span>
                                 </div>
-                                <span>2015 г</span>
                             </div>
+                            <a href="#" class="btn btn-red btn-black call-popup" data-popup="formPopup">КУПИТЬ</a>
                         </div>
-                        <a href="#" class="btn btn-red btn-black">КУПИТЬ</a>
                     </div>
-                </div>
-                <div class="auto-layout">
-                    <div class="auto-square">Б/У</div>
-                    <div class="auto">
-                        <div class="auto-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/auto-img-3.jpg" alt="auto"></div>
-                        <div class="auto-name">Ford Explorer Limited 4WD</div>
-                        <div class="auto-info">
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/hot-icon.png" alt="hot">
+                    <div class="auto-layout">
+                        <div class="auto-square">Б/У</div>
+                        <div class="auto">
+                            <div class="auto-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/auto-img-3.jpg" alt="auto"></div>
+                            <div class="auto-name">Ford Explorer Limited 4WD</div>
+                            <div class="auto-info">
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/hot-icon.png" alt="hot">
+                                    </div>
+                                    <span>Бензин</span>
                                 </div>
-                                <span>Бензин</span>
-                            </div>
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/road-icon.png" alt="hot">
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/road-icon.png" alt="hot">
+                                    </div>
+                                    <span>15 000 км</span>
                                 </div>
-                                <span>15 000 км</span>
-                            </div>
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/timer-icon.png" alt="hot">
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/timer-icon.png" alt="hot">
+                                    </div>
+                                    <span>2015 г</span>
                                 </div>
-                                <span>2015 г</span>
                             </div>
+                            <a href="#" class="btn btn-red btn-black call-popup" data-popup="formPopup">КУПИТЬ</a>
                         </div>
-                        <a href="#" class="btn btn-red btn-black">КУПИТЬ</a>
                     </div>
-                </div>
-                <div class="auto-layout">
-                    <div class="auto-square">Б/У</div>
-                    <div class="auto">
-                        <div class="auto-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/auto-img-1.jpg" alt="auto"></div>
-                        <div class="auto-name">Ford Explorer Limited 4WD</div>
-                        <div class="auto-info">
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/hot-icon.png" alt="hot">
+                    <div class="auto-layout">
+                        <div class="auto-square">Б/У</div>
+                        <div class="auto">
+                            <div class="auto-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/auto-img-1.jpg" alt="auto"></div>
+                            <div class="auto-name">Ford Explorer Limited 4WD</div>
+                            <div class="auto-info">
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/hot-icon.png" alt="hot">
+                                    </div>
+                                    <span>Бензин</span>
                                 </div>
-                                <span>Бензин</span>
-                            </div>
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/road-icon.png" alt="hot">
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/road-icon.png" alt="hot">
+                                    </div>
+                                    <span>15 000 км</span>
                                 </div>
-                                <span>15 000 км</span>
-                            </div>
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/timer-icon.png" alt="hot">
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/timer-icon.png" alt="hot">
+                                    </div>
+                                    <span>2015 г</span>
                                 </div>
-                                <span>2015 г</span>
                             </div>
+                            <a href="#" class="btn btn-red btn-black call-popup" data-popup="formPopup">КУПИТЬ</a>
                         </div>
-                        <a href="#" class="btn btn-red btn-black">КУПИТЬ</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="why b-lazy" data-src="./images/why-bg.jpg">
+    <div id="why" class="why b-lazy" data-src="./images/why-bg.jpg">
         <div class="wrapper">
             <h2 class="title title-white">
                 <span class="title-shadow">Почему каждое 5-е авто заказывают у нас?</span>
@@ -419,7 +462,7 @@
             </form>
         </div>
     </div>
-    <div class="reviews b-lazy" data-src="./images/rev-bg.jpg">
+    <div id="reviews" class="reviews b-lazy" data-src="./images/rev-bg.jpg">
         <div class="wrapper">
             <h2 class="title title-white">
                 <span class="title-shadow">Почему нам доверяют</span>
@@ -461,298 +504,300 @@
             </div>
         </div>
     </div>
-    <div class="auto-section popular b-lazy" data-src="./images/popular-bg.jpg">
+    <div id="popular" class="auto-section popular b-lazy" data-src="./images/popular-bg.jpg">
         <div class="wrapper">
             <h2 class="title">
                 <span class="title-shadow">Популярные авто</span>
                 <span>Популярные авто</span>
             </h2>
             <p class="subtitle">Сравните цены на авто в Украине и авто «под ключ» для наших клиентов</p>
-            <div class="auto-slider slider owl-carousel">
-                <div class="auto-layout">
-                    <div class="auto-square">Б/У</div>
-                    <div class="auto">
-                        <div class="auto-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/auto-img-1.jpg" alt="auto"></div>
-                        <div class="auto-name">Ford Explorer Limited 4WD</div>
-                        <div class="auto-info">
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/hot-icon.png" alt="hot">
+            <div class="auto-slider-wrap">
+                <div class="auto-slider slider owl-carousel">
+                    <div class="auto-layout">
+                        <div class="auto-square">Б/У</div>
+                        <div class="auto">
+                            <div class="auto-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/auto-img-1.jpg" alt="auto"></div>
+                            <div class="auto-name">Ford Explorer Limited 4WD</div>
+                            <div class="auto-info">
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/hot-icon.png" alt="hot">
+                                    </div>
+                                    <span>Бензин</span>
                                 </div>
-                                <span>Бензин</span>
-                            </div>
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/road-icon.png" alt="hot">
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/road-icon.png" alt="hot">
+                                    </div>
+                                    <span>15 000 км</span>
                                 </div>
-                                <span>15 000 км</span>
-                            </div>
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/timer-icon.png" alt="hot">
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/timer-icon.png" alt="hot">
+                                    </div>
+                                    <span>2015 г</span>
                                 </div>
-                                <span>2015 г</span>
                             </div>
-                        </div>
-                        <div class="auto-list">
-                            <div class="auto-list-item">
-                                <p>Средняя цена на аукционе</p>
-                                <span>2700 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>Сбор аукциона</p>
-                                <span>540 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>Доставка в порт Украины</p>
-                                <span>300 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>Таможенные платежи</p>
-                                <span>1700 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>Выгрузка и оформление в порту </p>
-                                <span>750 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>Транспортировка по Украине </p>
-                                <span>250$</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>Сертификация и учет </p>
-                                <span>500$</span>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-red btn-black">КУПИТЬ</a>
-                        <div class="auto-list">
-                            <div class="auto-list-item">
-                                <p>ИТОГО АВТО «ПОД КЛЮЧ»</p>
-                                <span>2700 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>ЦЕНА В УКРАИНЕ </p>
-                                <span>540 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>ЦЕНА В УКРАИНЕ </p>
-                                <span>300 $</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="auto-layout">
-                    <div class="auto-square">NEW</div>
-                    <div class="auto">
-                        <div class="auto-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/auto-img-2.jpg" alt="auto"></div>
-                        <div class="auto-name">Ford Explorer Limited 4WD</div>
-                        <div class="auto-info">
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/hot-icon.png" alt="hot">
+                            <div class="auto-list">
+                                <div class="auto-list-item">
+                                    <p>Средняя цена на аукционе</p>
+                                    <span>2700 $</span>
                                 </div>
-                                <span>Бензин</span>
-                            </div>
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/road-icon.png" alt="hot">
+                                <div class="auto-list-item">
+                                    <p>Сбор аукциона</p>
+                                    <span>540 $</span>
                                 </div>
-                                <span>15 000 км</span>
-                            </div>
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/timer-icon.png" alt="hot">
+                                <div class="auto-list-item">
+                                    <p>Доставка в порт Украины</p>
+                                    <span>300 $</span>
                                 </div>
-                                <span>2015 г</span>
+                                <div class="auto-list-item">
+                                    <p>Таможенные платежи</p>
+                                    <span>1700 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>Выгрузка и оформление в порту </p>
+                                    <span>750 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>Транспортировка по Украине </p>
+                                    <span>250$</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>Сертификация и учет </p>
+                                    <span>500$</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="auto-list">
-                            <div class="auto-list-item">
-                                <p>Средняя цена на аукционе</p>
-                                <span>2700 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>Сбор аукциона</p>
-                                <span>540 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>Доставка в порт Украины</p>
-                                <span>300 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>Таможенные платежи</p>
-                                <span>1700 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>Выгрузка и оформление в порту </p>
-                                <span>750 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>Транспортировка по Украине </p>
-                                <span>250$</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>Сертификация и учет </p>
-                                <span>500$</span>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-red btn-black">КУПИТЬ</a>
-                        <div class="auto-list">
-                            <div class="auto-list-item">
-                                <p>ИТОГО АВТО «ПОД КЛЮЧ»</p>
-                                <span>2700 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>ЦЕНА В УКРАИНЕ </p>
-                                <span>540 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>ЦЕНА В УКРАИНЕ </p>
-                                <span>300 $</span>
+                            <a href="#" class="btn btn-red btn-black call-popup" data-popup="formPopup">КУПИТЬ</a>
+                            <div class="auto-list">
+                                <div class="auto-list-item">
+                                    <p>ИТОГО АВТО «ПОД КЛЮЧ»</p>
+                                    <span>2700 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>ЦЕНА В УКРАИНЕ </p>
+                                    <span>540 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>ЦЕНА В УКРАИНЕ </p>
+                                    <span>300 $</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="auto-layout">
-                    <div class="auto-square">Б/У</div>
-                    <div class="auto">
-                        <div class="auto-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/auto-img-3.jpg" alt="auto"></div>
-                        <div class="auto-name">Ford Explorer Limited 4WD</div>
-                        <div class="auto-info">
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/hot-icon.png" alt="hot">
+                    <div class="auto-layout">
+                        <div class="auto-square">NEW</div>
+                        <div class="auto">
+                            <div class="auto-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/auto-img-2.jpg" alt="auto"></div>
+                            <div class="auto-name">Ford Explorer Limited 4WD</div>
+                            <div class="auto-info">
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/hot-icon.png" alt="hot">
+                                    </div>
+                                    <span>Бензин</span>
                                 </div>
-                                <span>Бензин</span>
-                            </div>
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/road-icon.png" alt="hot">
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/road-icon.png" alt="hot">
+                                    </div>
+                                    <span>15 000 км</span>
                                 </div>
-                                <span>15 000 км</span>
-                            </div>
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/timer-icon.png" alt="hot">
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/timer-icon.png" alt="hot">
+                                    </div>
+                                    <span>2015 г</span>
                                 </div>
-                                <span>2015 г</span>
                             </div>
-                        </div>
-                        <div class="auto-list">
-                            <div class="auto-list-item">
-                                <p>Средняя цена на аукционе</p>
-                                <span>2700 $</span>
+                            <div class="auto-list">
+                                <div class="auto-list-item">
+                                    <p>Средняя цена на аукционе</p>
+                                    <span>2700 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>Сбор аукциона</p>
+                                    <span>540 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>Доставка в порт Украины</p>
+                                    <span>300 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>Таможенные платежи</p>
+                                    <span>1700 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>Выгрузка и оформление в порту </p>
+                                    <span>750 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>Транспортировка по Украине </p>
+                                    <span>250$</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>Сертификация и учет </p>
+                                    <span>500$</span>
+                                </div>
                             </div>
-                            <div class="auto-list-item">
-                                <p>Сбор аукциона</p>
-                                <span>540 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>Доставка в порт Украины</p>
-                                <span>300 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>Таможенные платежи</p>
-                                <span>1700 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>Выгрузка и оформление в порту </p>
-                                <span>750 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>Транспортировка по Украине </p>
-                                <span>250$</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>Сертификация и учет </p>
-                                <span>500$</span>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-red btn-black">КУПИТЬ</a>
-                        <div class="auto-list">
-                            <div class="auto-list-item">
-                                <p>ИТОГО АВТО «ПОД КЛЮЧ»</p>
-                                <span>2700 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>ЦЕНА В УКРАИНЕ </p>
-                                <span>540 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>ЦЕНА В УКРАИНЕ </p>
-                                <span>300 $</span>
+                            <a href="#" class="btn btn-red btn-black call-popup" data-popup="formPopup">КУПИТЬ</a>
+                            <div class="auto-list">
+                                <div class="auto-list-item">
+                                    <p>ИТОГО АВТО «ПОД КЛЮЧ»</p>
+                                    <span>2700 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>ЦЕНА В УКРАИНЕ </p>
+                                    <span>540 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>ЦЕНА В УКРАИНЕ </p>
+                                    <span>300 $</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="auto-layout">
-                    <div class="auto-square">Б/У</div>
-                    <div class="auto">
-                        <div class="auto-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/auto-img-1.jpg" alt="auto"></div>
-                        <div class="auto-name">Ford Explorer Limited 4WD</div>
-                        <div class="auto-info">
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/hot-icon.png" alt="hot">
+                    <div class="auto-layout">
+                        <div class="auto-square">Б/У</div>
+                        <div class="auto">
+                            <div class="auto-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/auto-img-3.jpg" alt="auto"></div>
+                            <div class="auto-name">Ford Explorer Limited 4WD</div>
+                            <div class="auto-info">
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/hot-icon.png" alt="hot">
+                                    </div>
+                                    <span>Бензин</span>
                                 </div>
-                                <span>Бензин</span>
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/road-icon.png" alt="hot">
+                                    </div>
+                                    <span>15 000 км</span>
+                                </div>
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/timer-icon.png" alt="hot">
+                                    </div>
+                                    <span>2015 г</span>
+                                </div>
                             </div>
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/road-icon.png" alt="hot">
+                            <div class="auto-list">
+                                <div class="auto-list-item">
+                                    <p>Средняя цена на аукционе</p>
+                                    <span>2700 $</span>
                                 </div>
-                                <span>15 000 км</span>
+                                <div class="auto-list-item">
+                                    <p>Сбор аукциона</p>
+                                    <span>540 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>Доставка в порт Украины</p>
+                                    <span>300 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>Таможенные платежи</p>
+                                    <span>1700 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>Выгрузка и оформление в порту </p>
+                                    <span>750 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>Транспортировка по Украине </p>
+                                    <span>250$</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>Сертификация и учет </p>
+                                    <span>500$</span>
+                                </div>
                             </div>
-                            <div class="auto-info-item">
-                                <div class="auto-info-icon">
-                                    <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/timer-icon.png" alt="hot">
+                            <a href="#" class="btn btn-red btn-black call-popup" data-popup="formPopup">КУПИТЬ</a>
+                            <div class="auto-list">
+                                <div class="auto-list-item">
+                                    <p>ИТОГО АВТО «ПОД КЛЮЧ»</p>
+                                    <span>2700 $</span>
                                 </div>
-                                <span>2015 г</span>
+                                <div class="auto-list-item">
+                                    <p>ЦЕНА В УКРАИНЕ </p>
+                                    <span>540 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>ЦЕНА В УКРАИНЕ </p>
+                                    <span>300 $</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="auto-list">
-                            <div class="auto-list-item">
-                                <p>Средняя цена на аукционе</p>
-                                <span>2700 $</span>
+                    </div>
+                    <div class="auto-layout">
+                        <div class="auto-square">Б/У</div>
+                        <div class="auto">
+                            <div class="auto-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/auto-img-1.jpg" alt="auto"></div>
+                            <div class="auto-name">Ford Explorer Limited 4WD</div>
+                            <div class="auto-info">
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/hot-icon.png" alt="hot">
+                                    </div>
+                                    <span>Бензин</span>
+                                </div>
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/road-icon.png" alt="hot">
+                                    </div>
+                                    <span>15 000 км</span>
+                                </div>
+                                <div class="auto-info-item">
+                                    <div class="auto-info-icon">
+                                        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/timer-icon.png" alt="hot">
+                                    </div>
+                                    <span>2015 г</span>
+                                </div>
                             </div>
-                            <div class="auto-list-item">
-                                <p>Сбор аукциона</p>
-                                <span>540 $</span>
+                            <div class="auto-list">
+                                <div class="auto-list-item">
+                                    <p>Средняя цена на аукционе</p>
+                                    <span>2700 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>Сбор аукциона</p>
+                                    <span>540 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>Доставка в порт Украины</p>
+                                    <span>300 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>Таможенные платежи</p>
+                                    <span>1700 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>Выгрузка и оформление в порту </p>
+                                    <span>750 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>Транспортировка по Украине </p>
+                                    <span>250$</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>Сертификация и учет </p>
+                                    <span>500$</span>
+                                </div>
                             </div>
-                            <div class="auto-list-item">
-                                <p>Доставка в порт Украины</p>
-                                <span>300 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>Таможенные платежи</p>
-                                <span>1700 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>Выгрузка и оформление в порту </p>
-                                <span>750 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>Транспортировка по Украине </p>
-                                <span>250$</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>Сертификация и учет </p>
-                                <span>500$</span>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-red btn-black">КУПИТЬ</a>
-                        <div class="auto-list">
-                            <div class="auto-list-item">
-                                <p>ИТОГО АВТО «ПОД КЛЮЧ»</p>
-                                <span>2700 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>ЦЕНА В УКРАИНЕ </p>
-                                <span>540 $</span>
-                            </div>
-                            <div class="auto-list-item">
-                                <p>ЦЕНА В УКРАИНЕ </p>
-                                <span>300 $</span>
+                            <a href="#" class="btn btn-red btn-black call-popup" data-popup="formPopup">КУПИТЬ</a>
+                            <div class="auto-list">
+                                <div class="auto-list-item">
+                                    <p>ИТОГО АВТО «ПОД КЛЮЧ»</p>
+                                    <span>2700 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>ЦЕНА В УКРАИНЕ </p>
+                                    <span>540 $</span>
+                                </div>
+                                <div class="auto-list-item">
+                                    <p>ЦЕНА В УКРАИНЕ </p>
+                                    <span>300 $</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -814,7 +859,7 @@
             </div>
         </div>
     </div>
-    <div class="contacts">
+    <div id="contacts" class="contacts">
         <div class="wrapper">
             <div class="contacts-cnt-wrap b-lazy" data-src="./images/contact-bg.jpg">
                 <div class="contacts-cnt">
@@ -859,17 +904,21 @@
 
 
 
-    <!-- <div id="formPopup" class="popup-wrapper">
+    <div id="formPopup" class="popup-wrapper">
         <div class="popup-layout">
             <div class="popup">
-                <div class="popup-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/popup-img.png" alt="popup-img"></div>
                 <div class="popup-cnt">
-                    <form action="">
-                        <div class="popup-title">Оставьте заявку</div>
-                        <div class="popup-subtitle">чтобы получить уникальное предложение</div>
-                        <input type="text" placeholder="Введите Ваше имя.." class="field field-name">
-                        <input type="tel" placeholder="Введите номер телефона ... " class="field phone-mask">
-                        <input class="btn" type="submit" value="Отправить">
+                    <form action="#">
+                        <div class="select-row">
+                            <select name="auto">
+                                <option value="0">Марка авто</option>
+                                <option value="1">Audi</option>
+                                <option value="2">Ford</option>
+                                <option value="3">Toyota</option>
+                            </select>
+                        </div>
+                        <input class="phone-mask" type="tel" name="tel" placeholder="Номер телефона">
+                        <button class="btn btn-red" type="submit">Получить скидку</button>
                     </form>
                 </div>
                 <div class="popup-close"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/close-btn.svg" alt=""></div>
@@ -880,15 +929,20 @@
     <div id="thanksPopup" class="popup-wrapper">
         <div class="popup-layout">
             <div class="popup">
-                <div class="popup-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/popup-img.png" alt="popup-img"></div>
                 <div class="popup-cnt">
-                    <div class="popup-title">Спасибо!</div>
-                    <div class="popup-subtitle">Мы свяжемся с вами в ближайшее время </div>
+                    <div class="popup-title popup-title-l">Спасибо!</div>
+                    <div class="popup-subtitle">Ваша заявка принята, ожидайте звонка менеджера</div>
+                    <div class="popup-subtitle popup-subtitle-s">Подписывайтесь на наши соц. сети</div>
+                    <div class="header-social">
+                        <a href="#"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/instagram.svg" alt="icon"></a>
+                        <a href="#"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/facebook.svg" alt="icon"></a>
+                        <a href="#"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/telegram.svg" alt="icon"></a>
+                    </div>
                 </div>
                 <div class="popup-close"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./images/close-btn.svg" alt=""></div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <script src="./js/libs/jquery-3.3.1.min.js"></script>
     <script src="./js/libs/animation/wow.min.js"></script>
