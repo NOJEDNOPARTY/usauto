@@ -42,6 +42,22 @@ var common = {
 			$(this).closest('.popup-wrapper').removeClass('active');
 			$('body').removeClass('hidden');
 		})
+		
+	
+		var bLazy = new Blazy({});
+		function fixPanel() {
+			if ($(window).scrollTop() > 0) {
+				$('header').addClass('fixed');
+				$('body').css({'margin-top':$('header').outerHeight()})
+			}else {
+				$('header').removeClass('fixed')
+				$('body').css({'margin-top':0})
+			}
+		};
+		fixPanel();
+		$(window).scroll(function() {
+			fixPanel();
+		});
 
 	},
 	owl: function(){
